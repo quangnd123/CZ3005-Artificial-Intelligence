@@ -1,0 +1,1217 @@
+Generate World
+Print Absolute World
++---+---+---+---+---+---+---+
+| B | B | B | B | B | B | B |
++---+---+---+---+---+---+---+
+| B |   | W | P |   |   | B |
++---+---+---+---+---+---+---+
+| B |   |   | P |   |   | B |
++---+---+---+---+---+---+---+
+| B |   | C |   |   |   | B |
++---+---+---+---+---+---+---+
+| B | S |   |   |   | P | B |
++---+---+---+---+---+---+---+
+| B | B | B | B | B | B | B |
++---+---+---+---+---+---+---+
+-------------------------------------------------------------------
+Print initial sense
+Absolute direction on map: anorth
+Action: None
+Absolute direction on map after move: anorth
+Sensory Data: Confounded-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 0, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
+Initial Relative World
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|%..|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Start testing
+Absolute direction on map: anorth
+Action: turnleft
+Absolute direction on map after move: awest
+Sensory Data: C-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 0, 'D': 'rwest'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|%..|...|
+| s |-<-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: awest
+Action: moveforward
+Absolute direction on map after move: awest
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-S-T-G-Bump-S
+Agent current coordinate: --- [{'X': 0, 'Y': 0, 'D': 'rwest'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- [{'X': -1, 'Y': 0}]
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|###|%..|...|
+|###|-<-| s |
+|###|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Print final absolute world
+Agent current coordinate: --- [{'X': 0, 'Y': 0, 'D': 'rwest'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- [{'X': -1, 'Y': 0}]
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | ? | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | ? | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | ? | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | s | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|###|%..|...|...|...|...|...|
+|###|-<-| s | ? | ? | ? | ? |
+|###|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | s | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+Generate World
+Print Absolute World
++---+---+---+---+---+---+---+
+| B | B | B | B | B | B | B |
++---+---+---+---+---+---+---+
+| B |   | W | P |   |   | B |
++---+---+---+---+---+---+---+
+| B |   |   | P |   |   | B |
++---+---+---+---+---+---+---+
+| B |   | C |   |   |   | B |
++---+---+---+---+---+---+---+
+| B | S |   |   |   | P | B |
++---+---+---+---+---+---+---+
+| B | B | B | B | B | B | B |
++---+---+---+---+---+---+---+
+-------------------------------------------------------------------
+Print initial sense
+Absolute direction on map: anorth
+Action: None
+Absolute direction on map after move: anorth
+Sensory Data: Confounded-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 0, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
+Initial Relative World
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|%..|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Start testing
+Absolute direction on map: anorth
+Action: moveforward
+Absolute direction on map after move: anorth
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 1, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: anorth
+Action: moveforward
+Absolute direction on map after move: anorth
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 2, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 2}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 2}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 3}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: anorth
+Action: moveforward
+Absolute direction on map after move: anorth
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-Stench-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 3, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 2}, {'X': 0, 'Y': 3}]
+Agent wumpus coordinate: --- [{'X': 0, 'Y': 4}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}]
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- [{'X': 0, 'Y': 3}]
+Agent safe coordinate: --- [{'X': -1, 'Y': 2}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 3}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | W | ? |
+|...|...|...|
++---+---+---+
+|...|.=.|...|
+| W |-^-| W |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: anorth
+Action: turnright
+Absolute direction on map after move: aeast
+Sensory Data: C-Stench-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 3, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 2}, {'X': 0, 'Y': 3}]
+Agent wumpus coordinate: --- [{'X': 0, 'Y': 4}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 0, 'Y': 4}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}]
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- [{'X': 0, 'Y': 3}, {'X': 0, 'Y': 3}]
+Agent safe coordinate: --- [{'X': -1, 'Y': 2}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 3}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | W | ? |
+|...|...|...|
++---+---+---+
+|...|.=.|...|
+| W |->-| W |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: aeast
+Action: moveforward
+Absolute direction on map after move: aeast
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-S-Tingle-G-B-S
+Agent current coordinate: --- [{'X': 1, 'Y': 3, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 2}, {'X': 0, 'Y': 3}, {'X': 1, 'Y': 3}]
+Agent wumpus coordinate: --- [{'X': 0, 'Y': 4}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 0, 'Y': 4}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}]
+Agent confundus coordinate: --- [{'X': 1, 'Y': 4}, {'X': 2, 'Y': 3}, {'X': 2, 'Y': 3}]
+Agent tingle coordinate: --- [{'X': 1, 'Y': 3}]
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- [{'X': 0, 'Y': 3}, {'X': 0, 'Y': 3}]
+Agent safe coordinate: --- [{'X': -1, 'Y': 2}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 3}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+---+
+|...|...|...|...|
+| ? | W | O | ? |
+|...|...|...|...|
++---+---+---+---+
+|...|.=.|..T|...|
+| W | S |->-| O |
+|...|...|...|...|
++---+---+---+---+
+|...|...|...|...|
+| s | S | s | ? |
+|...|...|...|...|
++---+---+---+---+
+|...|...|...|...|
+| s | S | s | ? |
+|...|...|...|...|
++---+---+---+---+
+|...|...|...|...|
+| s | S | s | ? |
+|...|...|...|...|
++---+---+---+---+
+|...|...|...|...|
+| ? | s | ? | ? |
+|...|...|...|...|
++---+---+---+---+
+-------------------------------------------------------------------
+Game Over
+Print final absolute world
+Agent current coordinate: --- [{'X': 1, 'Y': 3, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 2}, {'X': 0, 'Y': 3}, {'X': 1, 'Y': 3}]
+Agent wumpus coordinate: --- [{'X': 0, 'Y': 4}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 0, 'Y': 4}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}]
+Agent confundus coordinate: --- [{'X': 1, 'Y': 4}, {'X': 2, 'Y': 3}, {'X': 2, 'Y': 3}]
+Agent tingle coordinate: --- [{'X': 1, 'Y': 3}]
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- [{'X': 0, 'Y': 3}, {'X': 0, 'Y': 3}]
+Agent safe coordinate: --- [{'X': -1, 'Y': 2}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 3}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | W | O | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|.=.|..T|...|...|...|...|
+| W | S |->-| O | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| s | S | s | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| s | S | s | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| s | S | s | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | s | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+Generate World
+Print Absolute World
++---+---+---+---+---+---+---+
+| B | B | B | B | B | B | B |
++---+---+---+---+---+---+---+
+| B |   | W | P |   |   | B |
++---+---+---+---+---+---+---+
+| B |   |   | P |   |   | B |
++---+---+---+---+---+---+---+
+| B |   | C |   |   |   | B |
++---+---+---+---+---+---+---+
+| B | S |   |   |   | P | B |
++---+---+---+---+---+---+---+
+| B | B | B | B | B | B | B |
++---+---+---+---+---+---+---+
+-------------------------------------------------------------------
+Print initial sense
+Absolute direction on map: anorth
+Action: None
+Absolute direction on map after move: anorth
+Sensory Data: Confounded-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 0, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
+Initial Relative World
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|%..|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Start testing
+Absolute direction on map: anorth
+Action: moveforward
+Absolute direction on map after move: anorth
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 1, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: anorth
+Action: moveforward
+Absolute direction on map after move: anorth
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 2, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 2}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 2}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 3}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: anorth
+Action: moveforward
+Absolute direction on map after move: anorth
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-Stench-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 3, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 2}, {'X': 0, 'Y': 3}]
+Agent wumpus coordinate: --- [{'X': 0, 'Y': 4}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}]
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- [{'X': 0, 'Y': 3}]
+Agent safe coordinate: --- [{'X': -1, 'Y': 2}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 3}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | W | ? |
+|...|...|...|
++---+---+---+
+|...|.=.|...|
+| W |-^-| W |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: anorth
+Action: turnright
+Absolute direction on map after move: aeast
+Sensory Data: C-Stench-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 3, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 2}, {'X': 0, 'Y': 3}]
+Agent wumpus coordinate: --- [{'X': 0, 'Y': 4}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 0, 'Y': 4}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}]
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- [{'X': 0, 'Y': 3}, {'X': 0, 'Y': 3}]
+Agent safe coordinate: --- [{'X': -1, 'Y': 2}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 3}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | W | ? |
+|...|...|...|
++---+---+---+
+|...|.=.|...|
+| W |->-| W |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: aeast
+Action: shoot
+Absolute direction on map after move: aeast
+Sensory Data: C-Stench-T-G-B-Scream
+Agent current coordinate: --- [{'X': 0, 'Y': 3, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 2}, {'X': 0, 'Y': 3}]
+Agent wumpus coordinate: --- [{'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': -1, 'Y': 3}, {'X': -1, 'Y': 3}]
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 2}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 3}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| W |->-| W |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: aeast
+Action: turnleft
+Absolute direction on map after move: anorth
+Sensory Data: C-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 3, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 2}, {'X': 0, 'Y': 3}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': 0, 'Y': 2}, {'X': 0, 'Y': 4}, {'X': -1, 'Y': 2}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 3}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Print final absolute world
+Agent current coordinate: --- [{'X': 0, 'Y': 3, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 2}, {'X': 0, 'Y': 3}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 3}, {'X': 1, 'Y': 3}, {'X': 0, 'Y': 2}, {'X': 0, 'Y': 4}, {'X': -1, 'Y': 2}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 3}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | s | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| s |-^-| s | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| s | S | s | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| s | S | s | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| s | S | s | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | s | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+Generate World
+Print Absolute World
++---+---+---+---+---+---+---+
+| B | B | B | B | B | B | B |
++---+---+---+---+---+---+---+
+| B |   | W | P |   |   | B |
++---+---+---+---+---+---+---+
+| B |   |   | P |   |   | B |
++---+---+---+---+---+---+---+
+| B |   | C |   |   |   | B |
++---+---+---+---+---+---+---+
+| B | S |   |   |   | P | B |
++---+---+---+---+---+---+---+
+| B | B | B | B | B | B | B |
++---+---+---+---+---+---+---+
+-------------------------------------------------------------------
+Print initial sense
+Absolute direction on map: anorth
+Action: None
+Absolute direction on map after move: anorth
+Sensory Data: Confounded-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 0, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
+Initial Relative World
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|%..|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Start testing
+Absolute direction on map: anorth
+Action: moveforward
+Absolute direction on map after move: anorth
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 1, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: anorth
+Action: turnright
+Absolute direction on map after move: aeast
+Sensory Data: C-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 1, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s |->-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: aeast
+Action: moveforward
+Absolute direction on map after move: aeast
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-S-T-Glitter-B-S
+Agent current coordinate: --- [{'X': 1, 'Y': 1, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 1, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- [{'X': 1, 'Y': 1}]
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': 0, 'Y': 1}, {'X': 2, 'Y': 1}, {'X': 1, 'Y': 0}, {'X': 1, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+---+
+|...|...|...|...|
+| ? | s | s | ? |
+|...|...|...|...|
++---+---+---+---+
+|...|...|...|...|
+| s | S |->-| s |
+|...|...|*..|...|
++---+---+---+---+
+|...|...|...|...|
+| s | S | s | ? |
+|...|...|...|...|
++---+---+---+---+
+|...|...|...|...|
+| ? | s | ? | ? |
+|...|...|...|...|
++---+---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: aeast
+Action: moveforward
+Absolute direction on map after move: aeast
+Coins Data: [[2, 2, 'D']]
+Sensory Data: C-S-Tingle-G-B-S
+Agent current coordinate: --- [{'X': 2, 'Y': 1, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 2, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- [{'X': 2, 'Y': 2}, {'X': 2, 'Y': 0}, {'X': 3, 'Y': 1}, {'X': 3, 'Y': 1}, {'X': 2, 'Y': 0}, {'X': 3, 'Y': 1}, {'X': 3, 'Y': 1}]
+Agent tingle coordinate: --- [{'X': 2, 'Y': 1}]
+Agent glitter coordinate: --- [{'X': 1, 'Y': 1}]
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': 0, 'Y': 1}, {'X': 2, 'Y': 1}, {'X': 1, 'Y': 0}, {'X': 1, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+---+---+
+|...|...|...|...|...|
+| ? | s | s | O | ? |
+|...|...|...|...|...|
++---+---+---+---+---+
+|...|...|...|..T|...|
+| s | S |-S-|->-| O |
+|...|...|*..|...|...|
++---+---+---+---+---+
+|...|...|...|...|...|
+| s | S | s | O | ? |
+|...|...|...|...|...|
++---+---+---+---+---+
+|...|...|...|...|...|
+| ? | s | ? | ? | ? |
+|...|...|...|...|...|
++---+---+---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: aeast
+Action: turnleft
+Absolute direction on map after move: anorth
+Sensory Data: C-S-Tingle-G-B-S
+Agent current coordinate: --- [{'X': 2, 'Y': 1, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 2, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- [{'X': 2, 'Y': 2}, {'X': 2, 'Y': 0}, {'X': 3, 'Y': 1}, {'X': 3, 'Y': 1}, {'X': 2, 'Y': 0}, {'X': 3, 'Y': 1}, {'X': 3, 'Y': 1}, {'X': 2, 'Y': 2}, {'X': 2, 'Y': 0}, {'X': 3, 'Y': 1}, {'X': 3, 'Y': 1}, {'X': 2, 'Y': 0}, {'X': 3, 'Y': 1}, {'X': 3, 'Y': 1}]
+Agent tingle coordinate: --- [{'X': 2, 'Y': 1}, {'X': 2, 'Y': 1}]
+Agent glitter coordinate: --- [{'X': 1, 'Y': 1}]
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': 0, 'Y': 1}, {'X': 2, 'Y': 1}, {'X': 1, 'Y': 0}, {'X': 1, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+---+---+
+|...|...|...|...|...|
+| ? | s | s | O | ? |
+|...|...|...|...|...|
++---+---+---+---+---+
+|...|...|...|..T|...|
+| s | S |-S-|-^-| O |
+|...|...|*..|...|...|
++---+---+---+---+---+
+|...|...|...|...|...|
+| s | S | s | O | ? |
+|...|...|...|...|...|
++---+---+---+---+---+
+|...|...|...|...|...|
+| ? | s | ? | ? | ? |
+|...|...|...|...|...|
++---+---+---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: anorth
+Action: moveforward
+Absolute direction on map after move: anorth
+Coins Data: [[2, 2, 'D']]
+Sensory Data: C-S-Tingle-G-B-S
+Agent current coordinate: --- [{'X': 2, 'Y': 2, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 2, 'Y': 1}, {'X': 2, 'Y': 2}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- [{'X': 2, 'Y': 2}, {'X': 2, 'Y': 0}, {'X': 3, 'Y': 1}, {'X': 3, 'Y': 1}, {'X': 2, 'Y': 0}, {'X': 3, 'Y': 1}, {'X': 3, 'Y': 1}, {'X': 2, 'Y': 2}, {'X': 2, 'Y': 0}, {'X': 3, 'Y': 1}, {'X': 3, 'Y': 1}, {'X': 2, 'Y': 0}, {'X': 3, 'Y': 1}, {'X': 3, 'Y': 1}, {'X': 2, 'Y': 3}, {'X': 3, 'Y': 2}, {'X': 3, 'Y': 2}]
+Agent tingle coordinate: --- [{'X': 2, 'Y': 1}, {'X': 2, 'Y': 1}, {'X': 2, 'Y': 2}]
+Agent glitter coordinate: --- [{'X': 1, 'Y': 1}]
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': 0, 'Y': 1}, {'X': 2, 'Y': 1}, {'X': 1, 'Y': 0}, {'X': 1, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+---+---+
+|...|...|...|...|...|
+| ? | ? | ? | O | ? |
+|...|...|...|...|...|
++---+---+---+---+---+
+|...|...|...|..T|...|
+| ? | s | s |-^-| O |
+|...|...|...|...|...|
++---+---+---+---+---+
+|...|...|...|..T|...|
+| s | S |-S-| S | O |
+|...|...|*..|...|...|
++---+---+---+---+---+
+|...|...|...|...|...|
+| s | S | s | O | ? |
+|...|...|...|...|...|
++---+---+---+---+---+
+|...|...|...|...|...|
+| ? | s | ? | ? | ? |
+|...|...|...|...|...|
++---+---+---+---+---+
+-------------------------------------------------------------------
+Step into portal, reposition...
+Absolute direction on map: awest
+Action: None
+Absolute direction on map after move: awest
+Sensory Data: Confounded-Stench-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 0, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wumpus coordinate: --- [{'X': 0, 'Y': 1}, {'X': 0, 'Y': -1}, {'X': 1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': -1, 'Y': 0}]
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- [{'X': 0, 'Y': 0}]
+Agent safe coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | W | ? |
+|...|...|...|
++---+---+---+
+|...|%=.|...|
+| W |-^-| W |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | W | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Print final absolute world
+Agent current coordinate: --- [{'X': 0, 'Y': 0, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wumpus coordinate: --- [{'X': 0, 'Y': 1}, {'X': 0, 'Y': -1}, {'X': 1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': -1, 'Y': 0}, {'X': -1, 'Y': 0}]
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- [{'X': 0, 'Y': 0}]
+Agent safe coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | W | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|%=.|...|...|...|...|...|
+| W |-<-| W | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | W | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | ? | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | ? | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | ? | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+Generate World
+Print Absolute World
++---+---+---+---+---+---+---+
+| B | B | B | B | B | B | B |
++---+---+---+---+---+---+---+
+| B |   | W | P |   |   | B |
++---+---+---+---+---+---+---+
+| B |   |   | P |   |   | B |
++---+---+---+---+---+---+---+
+| B |   | C |   |   |   | B |
++---+---+---+---+---+---+---+
+| B | S |   |   |   | P | B |
++---+---+---+---+---+---+---+
+| B | B | B | B | B | B | B |
++---+---+---+---+---+---+---+
+-------------------------------------------------------------------
+Print initial sense
+Absolute direction on map: anorth
+Action: None
+Absolute direction on map after move: anorth
+Sensory Data: Confounded-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 0, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
+Initial Relative World
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|%..|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Start testing
+Absolute direction on map: anorth
+Action: moveforward
+Absolute direction on map after move: anorth
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 1, 'D': 'rnorth'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s |-^-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: anorth
+Action: turnright
+Absolute direction on map after move: aeast
+Sensory Data: C-S-T-G-B-S
+Agent current coordinate: --- [{'X': 0, 'Y': 1, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s |->-| s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| s | S | s |
+|...|...|...|
++---+---+---+
+|...|...|...|
+| ? | s | ? |
+|...|...|...|
++---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: aeast
+Action: moveforward
+Absolute direction on map after move: aeast
+Coins Data: [[2, 2, 'ND']]
+Sensory Data: C-S-T-Glitter-B-S
+Agent current coordinate: --- [{'X': 1, 'Y': 1, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 1, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- [{'X': 1, 'Y': 1}]
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': 0, 'Y': 1}, {'X': 2, 'Y': 1}, {'X': 1, 'Y': 0}, {'X': 1, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+---+
+|...|...|...|...|
+| ? | s | s | ? |
+|...|...|...|...|
++---+---+---+---+
+|...|...|...|...|
+| s | S |->-| s |
+|...|...|*..|...|
++---+---+---+---+
+|...|...|...|...|
+| s | S | s | ? |
+|...|...|...|...|
++---+---+---+---+
+|...|...|...|...|
+| ? | s | ? | ? |
+|...|...|...|...|
++---+---+---+---+
+-------------------------------------------------------------------
+Absolute direction on map: aeast
+Action: pickup
+Absolute direction on map after move: aeast
+Sensory Data: C-S-T-G-B-S
+Agent current coordinate: --- [{'X': 1, 'Y': 1, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 1, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': 0, 'Y': 1}, {'X': 2, 'Y': 1}, {'X': 1, 'Y': 0}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 2, 'Y': 1}, {'X': 1, 'Y': 0}, {'X': 1, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+---+
+|...|...|...|...|
+| ? | s | s | ? |
+|...|...|...|...|
++---+---+---+---+
+|...|...|...|...|
+| s | S |->-| s |
+|...|...|...|...|
++---+---+---+---+
+|...|...|...|...|
+| s | S | s | ? |
+|...|...|...|...|
++---+---+---+---+
+|...|...|...|...|
+| ? | s | ? | ? |
+|...|...|...|...|
++---+---+---+---+
+-------------------------------------------------------------------
+Print final absolute world
+Agent current coordinate: --- [{'X': 1, 'Y': 1, 'D': 'reast'}]
+Agent visited coordinate: --- [{'X': 0, 'Y': 0}, {'X': 0, 'Y': 1}, {'X': 1, 'Y': 1}]
+Agent wumpus coordinate: --- []
+Agent confundus coordinate: --- []
+Agent tingle coordinate: --- []
+Agent glitter coordinate: --- []
+Agent stench coordinate: --- []
+Agent safe coordinate: --- [{'X': 0, 'Y': 1}, {'X': 2, 'Y': 1}, {'X': 1, 'Y': 0}, {'X': 1, 'Y': 2}, {'X': 0, 'Y': 1}, {'X': 2, 'Y': 1}, {'X': 1, 'Y': 0}, {'X': 1, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 1}, {'X': 1, 'Y': 1}, {'X': 0, 'Y': 0}, {'X': 0, 'Y': 2}, {'X': -1, 'Y': 0}, {'X': 1, 'Y': 0}, {'X': 0, 'Y': -1}, {'X': 0, 'Y': 1}, {'X': 0, 'Y': 0}]
+Agent wall coordinate: --- []
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | ? | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | ? | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | s | s | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| s | S |->-| s | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| s | S | s | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
+|...|...|...|...|...|...|...|
+| ? | s | ? | ? | ? | ? | ? |
+|...|...|...|...|...|...|...|
++---+---+---+---+---+---+---+
